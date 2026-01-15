@@ -424,3 +424,65 @@ header {
     transform: scale(1.02);
     transition: transform 0.4s ease;
 }
+.seasonal {
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    max-width: max-content;
+    margin: 0 auto;
+    background-color: #e6e6e1;
+}
+.seasonal-header {
+    margin-bottom: 20px;
+}
+.seasonal-text-box {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
+.seasonal-img-card-container {
+    display: flex;
+    gap: 20px;     
+    overflow-x: auto; 
+    padding-bottom: 15px;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+.seasonal-img-card-container::-webkit-scrollbar {
+    height: 6px;
+}
+.seasonal-img-card-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+.seasonal-img-card-container::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}
+.seasonal-img-card {
+    flex: 0 0 400px;
+}
+.seasonal-img-card a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start; 
+}
+.seasonal-img-card img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+}
+.seasonal-img-card span {
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: left;
+    display: inline-block; 
+    border-bottom: 3px solid transparent;
+    padding-bottom: 2px;
+    transition: border-color 0.3s ease;
+}
+.seasonal-img-card:hover span {
+    border-bottom: 3px solid #b11e22; 
+}
