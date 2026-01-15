@@ -328,3 +328,99 @@ header {
 .best-sellers-img-card:hover .card-label {
     border-bottom: 3px solid #b11e22; 
 }
+.furniture-section {
+    max-width: 1700px;
+    margin: 4rem auto;
+    padding: 0 40px;
+    font-family: Arial, sans-serif;
+}
+.furniture-text-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+.furniture-title { font-size: 1.1rem; font-weight: bold; margin: 0; }
+.furniture-explore-link {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    border-bottom: 2px solid #b11e22;
+    padding-bottom: 4px;
+}
+.furniture-main-layout {
+    display: flex;
+    gap: 40px;
+}
+.furniture-slider-container {
+    flex: 2;
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 20px;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+.furniture-slider-container::-webkit-scrollbar {
+    height: 8px;
+}
+.furniture-slider-container::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}
+.furniture-card {
+    flex: 0 0 calc(50% - 10px); 
+}
+.furniture-product-link-wrapper {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+.furniture-img-wrapper {
+    position: relative;
+    width: 100%;
+    background-color: #f9f9f9;
+    overflow: hidden;
+}
+.furniture-img-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.4s ease;
+}
+.furniture-hover-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.furniture-card:hover .furniture-main-img { opacity: 0; }
+.furniture-card:hover .furniture-hover-img { opacity: 1; }
+.furniture-product-info { margin-top: 15px; }
+.furniture-product-name { font-size: 0.95rem; margin: 0 0 5px 0; }
+.furniture-product-dims { font-size: 0.85rem; color: #777; margin: 0 0 12px 0; }
+.furniture-new-tag {
+    display: inline-block;
+    border: 1px solid #ddd;
+    padding: 2px 8px;
+    font-size: 0.75rem;
+    color: #b11e22;
+    margin-bottom: 12px;
+}
+.furniture-product-price { font-weight: bold; font-size: 1rem; margin: 0; }
+.furniture-static-img {
+    flex: 1;
+}
+.furniture-static-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-width: 50rem;
+}
+.furniture-static-img img:hover {
+    transform: scale(1.02);
+    transition: transform 0.4s ease;
+}
