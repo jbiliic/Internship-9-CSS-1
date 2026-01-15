@@ -209,4 +209,76 @@ header {
     color: #333;
     text-align: left;
 }
-
+.hero-slider {
+  position: relative;
+  max-width: 1400px; 
+  width: 95%; 
+  height: 65vh;  
+  margin: 2rem auto; 
+  overflow: hidden;
+  background-color: #f4f4f4;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 0 0 14rem 80px;  
+  box-sizing: border-box;
+  opacity: 0;
+  z-index: 1;
+}
+.hero-content {
+  position: relative;
+  z-index: 10;
+  color: #ffffff;
+}
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+  letter-spacing: -1px;
+}
+.hero-links {
+  display: flex;
+  gap: 30px;
+  color: #ffffff;
+}
+.hero-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.slide-1 { 
+  background-image: url('https://cdn11.bigcommerce.com/s-4b0oh2xvlj/images/stencil/original/image-manager/25aw-winter-essentials-main-1920x912.jpg?t=1765465135'); 
+  animation: fadeTransition 20s infinite;
+}
+.slide-2 { 
+  background-image: url('https://cdn11.bigcommerce.com/s-4b0oh2xvlj/images/stencil/original/image-manager/26ss-hasami-tableware-1920x912-01.jpg?t=1768234142'); 
+  animation: fadeTransition 20s infinite 10s;
+}
+@keyframes fadeTransition {
+  0%, 45% { opacity: 1; z-index: 5; }
+  50%, 95% { opacity: 0; z-index: 1; }
+  100% { opacity: 1; z-index: 5; }
+}
+.slider-nav-nums {
+  position: absolute;
+  top: 40px;
+  right: 50px;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 4px;
+  z-index: 20;
+}
