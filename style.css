@@ -211,7 +211,7 @@ header {
 }
 .hero-slider {
   position: relative;
-  max-width: 1400px; 
+  max-width: 1700px; 
   width: 95%; 
   height: 65vh;  
   margin: 2rem auto; 
@@ -281,4 +281,50 @@ header {
   font-weight: bold;
   letter-spacing: 4px;
   z-index: 20;
+}
+.best-sellers-section {
+    max-width: 1700px;
+    margin: 2rem auto;
+    padding: 0 20px;
+    font-family: Arial, sans-serif;
+}
+.best-sellers-text-section h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+.best-sellers-img-container {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+}
+.best-sellers-img-card {
+    position: relative; 
+    flex: 1;       
+    overflow: hidden;
+    cursor: pointer;
+}
+.best-sellers-img-card img {
+    width: 100%;
+    display: block;
+    aspect-ratio: 1 / 1.2; 
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+.card-label {
+    position: absolute;
+    bottom: 30px; 
+    left: 30px;   
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3); 
+    pointer-events: none;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 5px;
+    transition: border-color 0.3s ease;
+}
+.best-sellers-img-card:hover .card-label {
+    border-bottom: 3px solid #b11e22; 
 }
