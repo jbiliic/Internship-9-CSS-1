@@ -486,3 +486,67 @@ header {
 .seasonal-img-card:hover span {
     border-bottom: 3px solid #b11e22; 
 }
+.stories {
+    max-width: 1850px;
+    margin: 4rem auto;
+    padding: 0 40px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+.stories-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #333;
+}
+.stories-img-container {
+    display: flex;
+    gap: 5px;
+}
+.stories-card {
+    flex: 1;
+}
+.stories-card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+.stories-img-wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.stories-img-wrapper img {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+.stories-card h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+.stories-desc {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.read-more {
+    font-size: 0.95rem;
+    font-weight: bold;
+}
+.stories-card:hover h3,
+.stories-card:hover .stories-desc,
+.stories-card:hover .read-more {
+    color: #b11e22; 
+}
+.stories-card:hover .stories-img-wrapper img {
+    transform: scale(1.05);
+}
